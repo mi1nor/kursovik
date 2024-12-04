@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Jura';
+    src: url('/assets/fonts/Jura-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    background: rgb(3, 0, 42);
+    color: #fff;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px !important;
+}
+section {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+    background-color: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+a {
+    color: #b0c4de;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1f7a8c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.offer-title {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Back button */
+.back-btn {
+    background-color: #0054B3;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #004a9f;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 420px) {
+
+    .offer-title {
+        width: 100%;
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 365px) {
+
+    .offer-title {
+        width: 100%;
+        font-size: 1.15rem !important;
+    }
+}
