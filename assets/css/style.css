@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Jura';
-    src: url('/assets/fonts/Jura-VariableFont_wght.ttf') format('truetype');
+    src: url('./assets/fonts/Jura-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 700;
     font-style: normal;
     font-display: swap;
@@ -543,7 +543,6 @@ body {
     height: 520px;
     background: rgba(255, 255, 255, 1);
     border-radius: 20px;
-    /* backdrop-filter: blur(20px); */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
@@ -552,19 +551,18 @@ body {
     z-index: 1000;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
-    pointer-events: none; /* Блокируем взаимодействие, когда не активна */
+    pointer-events: none; 
 }
 
 .wrapper.active-popup {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    pointer-events: auto; /* Включаем взаимодействие, когда активна */
+    pointer-events: auto;
 }
 
 .wrapper.closing {
-    /* transform: translate(-50%, -60%) scale(0.8); */
     opacity: 0;
-    pointer-events: none; /* Блокируем взаимодействие во время закрытия */
+    pointer-events: none;
 }
 
 .wrapper.active {
